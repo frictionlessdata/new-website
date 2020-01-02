@@ -19,21 +19,22 @@ jobs:
 name: Build and Deploy
 on: [push]
 jobs:
-build-and-deploy:
-	runs-on: ubuntu-latest
-	steps:
-	- name: Checkout
-	uses: actions/checkout@v1
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+    uses: actions/checkout@v1
 
-	- name: Install
-	run: |
-		npm install
-		npm run docs:build
+    - name: Install
+    run: |
+      npm install
+      npm run docs:build
 
-	- name: Build and Deploy
-	uses: JamesIves/github-pages-deploy-action@releases/v3
+    - name: Build and Deploy
+    uses: JamesIves/github-pages-deploy-action@releases/v3
   
-	with:
-		ACCESS_TOKEN: ${{ secrets.deploy_website }}
-		BRANCH: gh-pages # The branch the action should deploy to.
-		FOLDER: docs/.vuepress/dist # The folder the action should deploy.
+    with:
+    ACCESS_TOKEN: ${{ secrets.deploy_website }}
+    BRANCH: gh-pages # The branch the action should deploy to.
+    FOLDER: docs/.vuepress/dist # The folder the action should deploy.
