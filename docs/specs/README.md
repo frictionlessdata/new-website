@@ -1,3 +1,7 @@
+---
+sidebar: true
+---
+
 # Introduction
 
 Blahblah some basic introduction here
