@@ -1,7 +1,7 @@
 name: Build and Deploy
 on: [push]
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -16,3 +16,7 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: docs/.vuepress/dist
+on:
+  push:
+    branches:
+      - master
