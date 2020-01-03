@@ -7,10 +7,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Configure
-      run: 
-        git config --global user.email "monika.popova@datopian.com"
-        git config --global user.name "monikappv"
-        npm install
+      run: npm install
     - name: Build
       run: npm run docs:build
     - name: Deploy
