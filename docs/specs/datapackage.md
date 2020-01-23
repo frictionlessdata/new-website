@@ -129,7 +129,7 @@ A short url-usable (and preferably human-readable) name of the package. This MUS
 
 The name SHOULD be invariant, meaning that it SHOULD NOT change when a data package is updated, unless the new package version should be considered a distinct package, e.g. due to significant changes in structure or interpretation. Version distinction SHOULD be left to the version property. As a corollary, the name also SHOULD NOT include an indication of time range covered.
 
-##### `id`
+`id`
 
 A property reserved for globally unique identifiers. Examples of identifiers that are unique include UUIDs and DOIs.
 
@@ -149,7 +149,7 @@ Examples:
 }
 ```
 
-##### `licenses`
+`licenses`
 
 The license(s) under which the package is provided.
 
@@ -171,7 +171,7 @@ Here is an example:
 * `path`: A [url-or-path](www.dataresource-url-or-path.com) string, that is a fully qualified HTTP address, or a relative POSIX path (see [the url-or-path definition in Data Resource for details](www.dataresource-url-or-path.com)).
 * `title`: A human-readable title.
 
-##### `profile`
+`profile`
 
 A string identifying the `profile` of this descriptor as per the [profiles](www.profiles.com) specification.
 
@@ -193,23 +193,23 @@ Examples:
 
 The following are commonly used properties that the package descriptor MAY contain:
 
-##### `title`
+`title`
 
 A `string` providing a title or one sentence description for this package
 
-##### `description`
+`description`
 
 A description of the package. The description MUST be [markdown](https://commonmark.org/) formatted -- this also allows for simple plain text as plain text is itself valid markdown. The first paragraph (up to the first double line break) should be usable as summary information for the package.
 
-##### `homepage`
+`homepage`
 
 A URL for the home on the web that is related to this data package.
 
-##### `version`
+`version`
 
 A version string identifying the version of the package. It should conform to the [Semantic Versioning](https://semver.org/) requirements and should follow the [Data Package Version](www.datapackageversion.com) pattern.
 
-##### `source`
+`source`
 
 The raw sources for this data package. It MUST be an array of Source objects. Each Source object MUST have a `title` and MAY have `path` and/or `email` properties. Example:
 
@@ -224,7 +224,7 @@ The raw sources for this data package. It MUST be an array of Source objects. Ea
 * path: A [url-or-path](www.dataresource-url-or-path.com) string, that is a fully qualified HTTP address, or a relative POSIX path (see [the url-or-path definition in Data Resource for details](www.dataresource-url-or-path.com)).
 * email: An email address
 
-##### `contributors`
+`contributors`
 
 The people or organizations who contributed to this Data Package. It MUST be an array. Each entry is a Contributor and MUST be an `object`. A Contributor MUST have a `title` property and MAY contain `path`, `email`, `role` and `organization` properties. An example of the object structure is as follows:
 
@@ -244,17 +244,17 @@ The people or organizations who contributed to this Data Package. It MUST be an 
   * Note on semantics: use of the "author" property does not imply that that person was the original creator of the data in the data package - merely that they created and/or maintain the data package. It is common for data packages to "package" up data from elsewhere. The original origin of the data can be indicated with the `sources` property - see above.
 * `organization`: a string describing the organization this contributor is affiliated to.
 
-##### `keywords`
+`keywords`
 
 An Array of string keywords to assist users searching for the package in catalogs.
 
-##### `image`
+`image`
 
 An image to use for this data package. For example, when showing the package in a listing.
 
 The value of the image property `MUST` be a string pointing to the location of the image. The string must be a [url-or-path](www.dataresource-url-or-path.com), that is a fully qualified HTTP address, or a relative POSIX path (see [the url-or-path definition in Data Resource for details](www.dataresource-url-or-path.com)).
 
-##### `created`
+`created`
 
 The datetime on which this was created.
 
