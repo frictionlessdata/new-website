@@ -5,6 +5,7 @@ Author(s): Rufus Pollock
 JSON Schema (for spec): /schemas/csv-dialect.json
 Version: 1.2
 ```
+
 ### Language
 
 The key words `MUST`, `MUST NOT`, `REQUIRED`, `SHALL`, `SHALL NOT`, `SHOULD`, `SHOULD NOT`, `RECOMMENDED`, `MAY`, and `OPTIONAL` in this document are to be interpreted as described in [RFC 2119](www.google.com).
