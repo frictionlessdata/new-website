@@ -40,7 +40,7 @@ module.exports = {
             'datapackage',   /* /foo/two.html */
             'datapackage_identifier',
             'datapackage_views',
-            'dataressource',
+            'dataresource',
             'fiscaldatapackage',
             'fiscaldatapackage2',
             'fiscaldatapackage3',
