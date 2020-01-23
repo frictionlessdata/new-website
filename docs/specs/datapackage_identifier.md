@@ -3,7 +3,7 @@
 ``` 
 Author(s): Rufus Pollock
 JSON Schema (for spec): /schemas/data-package-identifier.json 
-Version: 10-alpha
+Version: 1.0-alpha
 ```
 
 ## Language
