@@ -103,6 +103,7 @@ That is: an array where each entry is either:
 The resources is termed "compiled" if all resources are objects and all data on those resources has been inlined onto an attribute named `_values`. At this point, the view is entirely self-contained -- all resources and their associated data is "inside" the view object and no external data loading is required.
 
 ### Graph Spec 
+
 ### Simple Graph Spec
 
 The simple graph spec provides a very simple graph descriptor setup that aims for an 80/20 result. It supports only the following graph types:
