@@ -16,7 +16,7 @@ CSV Dialect defines a simple format to describe the various dialects of CSV file
 
 ### Excluded
 
-CSV Dialect has nothing to do with the names, contents or types of the headers or data within the CSV file, only how it is formatted. However, CSV Dialect does allow the presence or absence of a header to be specified, similarly to RFC4180.
+CSV Dialect has nothing to do with the names, contents or types of the headers or data within the CSV file, only how it is formatted. However, CSV Dialect does allow the presence or absence of a header to be specified, similarly to [RFC4180](https://www.ietf.org/rfc/rfc4180.txt).
 
 CSV Dialect is also orthogonal to the character encoding used in the CSV file. Note that it is possible for files in CSV format to contain data in more than one encoding.
 
@@ -24,7 +24,7 @@ CSV Dialect is also orthogonal to the character encoding used in the CSV file. N
 
 CSV Dialect is useful for programmes which might have to deal with multiple dialects of CSV file, but which can rely on being told out-of-band which dialect will be used in a given input stream. This reduces the need for heuristic inference of CSV dialects, and simplifies the implementation of CSV readers, which must juggle dialect inference, schema inference, unseekable input streams, character encoding issues, and the lazy reading of very large input streams.
 
-Some related work can be found in this comparison of csv dialect support, this example of similar JSON format, and in Python's PEP 305.
+Some related work can be found in [this comparison of csv dialect support](https://docs.google.com/spreadsheets/d/1wjzil1q3t606IPahyBNNqB42OFF-JzxqhXqDDkPP_mc/edit#gid=0), [this example of similar JSON format](https://panda.readthedocs.io/en/latest/api.html#data-uploads), and in [Python's PEP 305](https://www.python.org/dev/peps/pep-0305/).
 
 ## Specification
 
@@ -63,13 +63,13 @@ Here's an example:
 
 ### Changelog 
 
-See the Changelog for information.
+See the [Changelog](https://frictionlessdata.io/specs/changelog/) for information.
 
 ### Implementations
 
 The following implementations are available for csv-dialect:
 
-* Python
-* JavaScript
+* [Python](https://github.com/frictionlessdata/datapackage-py)
+* [JavaScript](https://github.com/frictionlessdata/datapackage-js)
 
-See the implementation page for further information on writing an implementation of a Frictionless Data specification.
+See the [implementation](www.specsimplementation.com) page for further information on writing an implementation of a Frictionless Data specification.
