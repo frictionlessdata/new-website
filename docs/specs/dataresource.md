@@ -244,7 +244,7 @@ The value for the `schema` property on a `resource` MUST be an `object` represen
 
 If a `string` it must be a [url-or-path](www.urlorpath.com) as defined above, that is a fully qualified http URL or a relative POSIX path. The file at the location specified by this url-or-path string `MUST` be a JSON document containing the schema.
 
-:::notice
+:::info
 NOTE: the Data Package specification places no restrictions on the form of the schema Object. This flexibility enables specific communities to define schemas appropriate for the data they manage. As an example, the [Tabular Data Package](www.tabulardatapackage.com) specification requires the schema to conform to [Table Schema](www.tableschema.com).
 :::
 
