@@ -21,7 +21,7 @@
 // }
 
 module.exports = {
-    base: "/vuepress-exp/",
+    base: "/new-website/",
     themeConfig: {
     nav: [
         { text: 'Home', link: '/' },
