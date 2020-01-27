@@ -1,6 +1,6 @@
 # New Website
 
-This is the new website to be released in 2020. It reflects the updates did on Frictionless Data's brand.
+This is the new website to be released in 2020. It reflects the recent updates made to Frictionless Data's brand.
 
 ## Development
 
