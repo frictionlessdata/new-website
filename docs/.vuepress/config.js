@@ -21,70 +21,73 @@
 // }
 
 module.exports = {
-    base: "/new-website/",
-    themeConfig: {
+  base: "/new-website/",
+  themeConfig: {
     nav: [
-        { text: 'Home', link: '/' },
-        { text: 'About', link: '/about/' },
-        { text: 'Specs', link: '/specs/' },
-        { text: 'Test', link: '/test/' },
-        { text: 'External', link: 'https://google.com' }
-    ],      
-      sidebar: {
-        '/specs/': [{
-            title: 'Specifications',
-            collapsable: true,
-            children: [
-            '',     /* /foo/ */
-            'csvdialect',  /* /foo/one.html */
-            'datapackage',   /* /foo/two.html */
-            'datapackage_identifier',
-            'datapackage_views',
-            'dataresource',
-            'fiscaldatapackage',
-            'fiscaldatapackage2',
-            'fiscaldatapackage3',
-            'profiles',
-            'security',
-            'tableschema',
-            'tabulardatapackage',
-            'tabulardataressource'
-        ]
-    }],
-        '/guide/': [
-          '',      /* /bar/ */
-          'three', /* /bar/three.html */
-          'four'   /* /bar/four.html */
-        ],
-        '/test/mubtest/': [{
-            title: 'Specifications',
-            collapsable: true,
-            children: [
-            '',
-            [ '/test/mubtest/mubfile', 'Mubfile'],
-            [ '/test/mubtest/mubfile2', 'Mubfile2']
+      { text: "Home", link: "/" },
+      { text: "About", link: "/about/" },
+      { text: "Specs", link: "/specs/" },
+      { text: "Test", link: "/test/" },
+      { text: "External", link: "https://google.com" }
+    ],
+    sidebar: {
+      "/specs/": [
+        {
+          title: "Specifications",
+          collapsable: true,
+          children: [
+            "" /* /foo/ */,
+            "csvdialect" /* /foo/one.html */,
+            "datapackage" /* /foo/two.html */,
+            "datapackage_identifier",
+            "datapackage_views",
+            "dataresource",
+            "fiscaldatapackage",
+            "fiscaldatapackage2",
+            "fiscaldatapackage3",
+            "profiles",
+            "security",
+            "tableschema",
+            "tabulardatapackage",
+            "tabulardataressource"
           ]
-        }],
-          '/test/subtest/': [
-            '',
-            [ '/test/subtest/subfile', 'Subfile'],
-            [ '/test/subtest/subfile2', 'Subfile2']
-          ],
-          '/test/': [{
-            title: 'Specifications',
-            collapsable: true,
-            children: [
-            '',
-            [ '/test/mubtest/', 'CSV Dialect'],
-            [ '/test/subtest/', 'Data Package']
+        }
+      ],
+      "/guide/": [
+        "" /* /bar/ */,
+        "three" /* /bar/three.html */,
+        "four" /* /bar/four.html */
+      ],
+      "/test/mubtest/": [
+        {
+          title: "Specifications",
+          collapsable: true,
+          children: [
+            "",
+            ["/test/mubtest/mubfile", "Mubfile"],
+            ["/test/mubtest/mubfile2", "Mubfile2"]
           ]
-        }],
-  
-        // fallback
-        '/': [
-          '',        /* / */
-        ]
-      }
+        }
+      ],
+      "/test/subtest/": [
+        "",
+        ["/test/subtest/subfile", "Subfile"],
+        ["/test/subtest/subfile2", "Subfile2"]
+      ],
+      "/test/": [
+        {
+          title: "Specifications",
+          collapsable: true,
+          children: [
+            "",
+            ["/test/mubtest/", "CSV Dialect"],
+            ["/test/subtest/", "Data Package"]
+          ]
+        }
+      ],
+
+      // fallback
+      "/": ["" /* / */]
     }
   }
-  
+};
